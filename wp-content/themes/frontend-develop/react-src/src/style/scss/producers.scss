@@ -1,0 +1,49 @@
+#producers {
+    padding: 3rem 0;
+    background: url("../../img/background2.jpg");
+    -webkit-background-size: cover !important;
+    background-size: cover;   
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    .section-heading {
+        color: $white;
+    }
+
+    .producers-carousel {
+        padding: 3rem 0 !important;
+
+        .item {
+            perspective: 1000px;
+            transform: translateZ(0px);
+            transition: 0.5s;
+            // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+            &.bosch {
+                img {
+                    padding: 0.5rem 2rem;
+                }
+            }
+
+            &:hover {
+                transform: perspective(400px) translateZ(30px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #producers {
+        background-attachment: scroll;
+        
+        h3 {
+            font-size: 30px;
+        }
+
+        .producers-carousel {
+            padding-top: 1rem !important;
+            padding-bottom: 0 !important;
+        }
+    }
+}

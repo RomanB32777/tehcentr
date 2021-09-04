@@ -1,0 +1,58 @@
+.btn-large {
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    font-size: 15px;
+    box-shadow: $shadow;
+}
+
+.btn-primary {
+    background: $primary;
+    border-color: $primary;
+
+    &:hover, &:focus, &:active {
+        background: $dark-primary;
+        border-color: $dark-primary;
+    }
+
+    &:focus, &:active {
+        box-shadow: none !important;
+    }
+}
+
+.btn-secondary {
+    background: $secondary;
+    border-color: $secondary;
+
+    &:hover, &:focus, &:active {
+        background: $dark-secondary;
+        border-color: $dark-secondary;
+    }
+    
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+.btn-grey {
+    background: $middle-grey;
+    border-color: $middle-grey;
+    color: $white;
+
+    &:hover, &:focus, &:active {
+        background: $dark-grey;
+        border-color: $dark-grey;
+        color: $white;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-large {
+        padding: 0.8rem 0.8rem;
+        font-size: 12px;
+    }
+}

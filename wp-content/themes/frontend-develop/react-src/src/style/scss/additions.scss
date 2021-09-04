@@ -1,0 +1,124 @@
+#additions {
+    padding: 2rem 0;
+    
+    .additions-container {
+        min-height: 430px;
+    }
+
+    .additions-block {
+        padding: 4rem 8rem 2rem;
+
+        .addition {
+            padding: 0 0rem 2rem 2rem;
+
+            .card {
+                min-height: auto;
+                box-shadow: $shadow;
+                padding: 0;
+                border: none;
+
+                &-img {
+                    object-fit: cover;
+                }
+
+                &-img-overlay {
+                    padding: 0;
+                    overflow: hidden;
+
+                    &:hover {
+                        .card-content {
+                            transform: translateY(0%);
+
+                            .card-description {
+                                background: rgba(62, 62, 62, .7);
+                            }
+                        }
+                    }
+
+                    .card-content {
+                        position: relative;
+                        height: 100%;
+                        transition: 0.5s;
+                        transform: translateY(80%);
+
+                        .card-title {
+                            width: 100%;
+                            margin: 0;
+                            // background: $dark-grey;
+                            background: rgba(62, 62, 62, .7);
+                            text-align: center;
+                            padding: 1rem 0;
+                            transition: 0.5s;
+                        }
+
+                        .card-description {
+                            width: 100%;
+                            height: 100%;
+                            //background: $dark-grey;
+                            background: rgba(62, 62, 62, .7);
+                            padding: 1rem 2rem;
+                            transition: 0.5s;
+
+
+                            .description-list {
+                                list-style-type: none;
+                                padding-left: 0 !important;
+
+                                &-item {
+                                    display: flex;
+                                    margin-bottom: 0.5rem;
+
+                                    &::before {
+                                        content: '';
+                                        background: url("../../img/list-point2.png");
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        min-width: 24px;
+                                        min-height: 24px;
+                                        display: block;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #additions {
+
+        .additions-block {
+            padding: 4rem 0rem 2rem;
+
+            .owl-stage-outer .owl-stage .owl-item {
+
+                .addition {
+                    padding: 0px 1rem;
+
+                    .card {
+                        max-height: none;
+
+                        &-img-overlay {
+
+                            .card-content {
+                                // transform: translateY(81%);
+
+                                .card-title {
+                                    font-size: 18px;
+                                }
+
+                                .card-description {
+                                    padding: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

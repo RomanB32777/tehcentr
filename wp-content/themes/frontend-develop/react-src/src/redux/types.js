@@ -1,0 +1,21 @@
+export const types = {
+    DEFAULT: "DEFAULT",
+    SetProducts: "SetProducts",
+    SetAdditions: "SetAdditions",
+    SetProducers: "SetProducers",
+    SetCategories: "SetCategories",
+    SetCategoryProducts: "SetCategoryProducts",
+    SetCategoryName: "SetCategoryName",
+    SetModal: "SetModal",
+    SendOrder: "SendOrder",
+    AddToast: "SetToast",
+    RemoveToast: "RemoveToast",
+    RemoveAllToast: "RemoveAllToast",
+    SetLoading: "SetLoading",
+    HideLoading: "HideLoading",
+    SetTypeLoading: "SetTypeLoading",
+    HideTypeLoading: "HideTypeLoading",
+    SetSearch: "SetSearch",
+    SetPagination: "SetPagination",
+    SetSettings: "SetSettings"
+}

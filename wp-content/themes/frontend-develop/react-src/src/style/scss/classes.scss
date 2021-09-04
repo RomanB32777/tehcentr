@@ -1,0 +1,29 @@
+.c-primary {
+    color: $primary;
+}
+
+.c-darkgrey {
+    background: $dark-grey;
+    border-color: $dark-grey;
+    color: $white;
+
+    &:active,
+    &:focus {
+        background: $dark-grey;
+        border-color: $dark-grey;
+        color: $white;  
+    }
+}
+
+.c-grey {
+    background: $grey;
+    border-color: $grey;
+    color: $black;
+
+    &:active,
+    &:focus {
+        background: $grey;
+        border-color: $grey;
+        color: $black;  
+    }
+}

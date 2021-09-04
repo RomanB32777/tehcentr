@@ -1,0 +1,153 @@
+.modal {
+
+    .modal-body {
+
+       .reserved-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            &-img {
+                max-height: 300px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            &-text {
+                text-align: center;
+
+                .product-title {
+                    font-size: 22px;
+                    color: $secondary;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        form {
+
+            // #### here 
+            .form-control:focus,
+            .form-select:focus {
+                border-color: $primary;
+                box-shadow: none;
+            }
+
+            .form-select {
+                option {
+                    background: $white;
+                    transition: 0.3s;
+                    color: $secondary;
+                }
+            }
+
+            .form-control.is-invalid:focus,
+            .form-control.is-valid:focus,
+            .form-select.is-valid:focus {
+                box-shadow: none;
+            }
+
+            .form-control.is-invalid:focus {
+                border-color: #d9534f;
+            }
+
+            .form-control.is-valid:focus,
+            .form-select.is-valid:focus
+             {
+                border-color: #02b875;
+            }
+
+            // ####  
+
+            
+
+            //************** PHONE INPUT ***************
+
+            .PhoneInput {
+                display: block !important;
+
+                .PhoneInputCountry {
+                    display: none;
+                }
+
+                &.is-valid {
+                    input:focus {
+                        border-color: #02b875;
+                        box-shadow: none;
+                    }
+                }
+
+                &.is-invalid {
+                    input:focus {
+                        border-color: #d9534f;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            //************** END PHONE INPUT ***************
+
+            & .is-valid {
+
+                input {
+                    border-color: #02b875;
+                    padding-right: calc(1.5em + 1rem);
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2302b875' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+                    background-repeat: no-repeat;
+                    background-position: right calc(.375em + .25rem) center;
+                    background-size: calc(.75em + .5rem) calc(.75em + .5rem);
+                }
+
+            }
+
+
+            & .is-invalid {
+
+                input {
+                    border-color: #d9534f;
+                    padding-right: calc(1.5em + 1rem);
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23d9534f'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23d9534f' stroke='none'/%3e%3c/svg%3e");
+                    background-repeat: no-repeat;
+                    background-position: right calc(.375em + .25rem) center;
+                    background-size: calc(.75em + .5rem) calc(.75em + .5rem);
+
+                    &:focus {
+                        border-color: #d9534f !important;
+                        box-shadow: 0 0 0 0.25rem rgb(217 83 79 / 25%);
+                    }
+                }
+            }
+        }
+
+        .form-label {
+
+            span {
+                color: red;
+            }
+        }
+
+        input.btn {
+            box-shadow: $shadow;
+        }
+    }
+
+    .toasts-block {
+        margin-bottom: 1rem;
+        // position: absolute, ;
+        // bottom: 5%;
+        // right: 1%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .toasts-block {
+        top: 30%;
+        right: 3% !important;
+    }
+
+}

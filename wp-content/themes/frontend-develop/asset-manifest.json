@@ -1,0 +1,33 @@
+{
+  "files": {
+    "static/css/0.chunk.css": "/wp-content/themes/frontend-develop/static/css/0.chunk.css",
+    "static/js/0.chunk.js": "/wp-content/themes/frontend-develop/static/js/0.chunk.js",
+    "static/css/0.chunk.css.map": "/wp-content/themes/frontend-develop/static/css/0.chunk.css.map",
+    "static/js/0.chunk.js.map": "/wp-content/themes/frontend-develop/static/js/0.chunk.js.map",
+    "main.css": "/wp-content/themes/frontend-develop/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/frontend-develop/static/js/main.chunk.js",
+    "main.css.map": "/wp-content/themes/frontend-develop/static/css/main.chunk.css.map",
+    "main.js.map": "/wp-content/themes/frontend-develop/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/frontend-develop/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/frontend-develop/static/js/bundle.js.map",
+    "index.php": "/wp-content/themes/frontend-develop/index.php",
+    "static/media/Bosch3.png": "/wp-content/themes/frontend-develop/static/media/Bosch3.6ab67b19.png",
+    "static/media/style.scss": "/wp-content/themes/frontend-develop/static/media/background2.77f0e27e.jpg",
+    "static/media/bosch2.png": "/wp-content/themes/frontend-develop/static/media/bosch2.9408f11a.png",
+    "static/media/delivery.png": "/wp-content/themes/frontend-develop/static/media/delivery.797e60d2.png",
+    "static/media/favicon2.ico": "/wp-content/themes/frontend-develop/static/media/favicon2.c752923a.ico",
+    "static/media/loader.gif": "/wp-content/themes/frontend-develop/static/media/loader.99134e06.gif",
+    "static/media/loader2.gif": "/wp-content/themes/frontend-develop/static/media/loader2.0fff20e2.gif",
+    "static/media/loader3.gif": "/wp-content/themes/frontend-develop/static/media/loader3.2e8e60d1.gif",
+    "static/media/loader4.gif": "/wp-content/themes/frontend-develop/static/media/loader4.b6a5baa3.gif",
+    "static/media/main.png": "/wp-content/themes/frontend-develop/static/media/main.a7ab08af.png",
+    "static/media/new.jpg": "/wp-content/themes/frontend-develop/static/media/new.81ec17b2.jpg"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/css/0.chunk.css",
+    "static/js/0.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}

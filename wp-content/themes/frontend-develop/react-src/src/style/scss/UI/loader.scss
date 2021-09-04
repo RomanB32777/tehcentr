@@ -1,0 +1,47 @@
+.loader {
+    position: fixed;
+    background: rgba($black, 0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-fill-mode: forwards;
+}
+
+.loader-true {
+    animation-name: showLoader;
+    animation-duration: 0.5s;
+}
+
+.loader-false {
+    animation-name: hideLoader;
+    animation-duration: 0.5s;
+}
+
+@keyframes showLoader {
+    from {
+        opacity: 0;
+        z-index: -1;
+    }
+  
+    to {
+        opacity: 1;
+        z-index: 1061;
+
+    }
+}
+
+@keyframes hideLoader {
+    from {
+        opacity: 1;
+        z-index: 1061;
+    }
+  
+    to {
+        opacity: 0;
+        z-index: -1;
+    }
+}

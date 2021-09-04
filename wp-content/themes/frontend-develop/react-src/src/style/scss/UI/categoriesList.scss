@@ -1,0 +1,113 @@
+.search-input-group {
+
+    input,
+    button {
+     box-shadow: $shadow-ui;
+    } 
+
+    input:focus,
+    button:focus {
+        border-color: $dark-grey;
+        box-shadow: $shadow-ui;
+    }
+}
+
+.categoriesList {
+
+    .list-group {
+    
+        a {
+            text-decoration: none;
+            
+            /* &:first-child li {
+                border-top-left-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+            }   
+            
+            &:last-child li {
+                border-bottom-left-radius: 0.25rem;
+                border-bottom-right-radius: 0.25rem;
+            } */
+
+
+            li {
+                transition: 0.5s;
+                margin-bottom: 0.5rem;
+                border-radius: 0.25rem;
+                box-shadow: $shadow-ui;
+
+                p {
+                    color: $secondary;
+                    margin: 0;
+                    font-size: 16px;
+                    transition: inherit;
+                }
+
+                &:hover {
+                    background: $grey;
+                }
+
+                span {
+                    background: $middle-grey !important;
+                    transition: inherit;
+                }
+            }
+        }
+    }
+}
+
+.categoriesList-mobile {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: none;
+
+    button.btn-primary {
+        width: 100%;
+        background: $grey !important;
+        color: $black;
+        border-color: transparent;
+        border-radius: 0.25rem;
+        box-shadow: $shadow-ui;
+
+        &:focus {
+            border-color: $dark-grey;
+            box-shadow: none;
+        }
+    }
+
+    &.show>.btn-primary {
+        color: $black;
+        border-color: $dark-grey;
+    }
+    
+
+    .dropdown-menu {
+        width: 100%;
+        z-index: 3;
+
+        button {
+            transition: 0.5s;
+
+            a {
+                text-decoration: none;
+                color: $secondary;
+                font-size: 16px;
+            }
+
+            span {
+                background: $middle-grey !important;
+                transition: inherit;
+            }
+
+            &:hover {
+                background: $grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .categoriesList-mobile {
+        display: block;
+    }
+}

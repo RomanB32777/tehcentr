@@ -1,0 +1,48 @@
+#products {
+    padding-top: 8rem;
+
+    .products-block {
+        padding: 4rem 0;
+
+        .products-container, .category-container {
+            min-height: 1050px;
+        }
+
+        .products-container {
+
+            .search-result {
+                margin-bottom: 2rem;
+
+                span {
+                    color: $primary;
+                }
+            }
+
+            .no-search-result {
+                span {
+                    color: $primary;
+                }
+            }
+        }
+
+        .category-container {
+
+            .category-name {
+                margin-bottom: 2rem;
+
+                span {
+                    color: $primary
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #products {
+
+        .products-block {
+            padding: 4rem 1rem; 
+        }
+    }
+}

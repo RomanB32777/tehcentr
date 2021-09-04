@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/wp-content/themes/frontend/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/frontend/static/js/main.chunk.js",
+    "main.js.map": "/wp-content/themes/frontend/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/frontend/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/frontend/static/js/bundle.js.map",
+    "static/css/2.chunk.css": "/wp-content/themes/frontend/static/css/2.chunk.css",
+    "static/js/2.chunk.js": "/wp-content/themes/frontend/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/wp-content/themes/frontend/static/js/2.chunk.js.map",
+    "index.php": "/wp-content/themes/frontend/index.php",
+    "precache-manifest.988f1c707af67526e103ddc858f99820.js": "/wp-content/themes/frontend/precache-manifest.988f1c707af67526e103ddc858f99820.js",
+    "service-worker.js": "/wp-content/themes/frontend/service-worker.js",
+    "static/css/2.chunk.css.map": "/wp-content/themes/frontend/static/css/2.chunk.css.map",
+    "static/css/main.chunk.css.map": "/wp-content/themes/frontend/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/wp-content/themes/frontend/static/js/2.chunk.js.LICENSE.txt",
+    "static/media/Bosch3.png": "/wp-content/themes/frontend/static/media/Bosch3.6ab67b19.png",
+    "static/media/style.scss": "/wp-content/themes/frontend/static/media/background2.77f0e27e.jpg",
+    "static/media/bosch2.png": "/wp-content/themes/frontend/static/media/bosch2.9408f11a.png",
+    "static/media/delivery.png": "/wp-content/themes/frontend/static/media/delivery.797e60d2.png",
+    "static/media/favicon2.ico": "/wp-content/themes/frontend/static/media/favicon2.c752923a.ico",
+    "static/media/loader.gif": "/wp-content/themes/frontend/static/media/loader.99134e06.gif",
+    "static/media/loader2.gif": "/wp-content/themes/frontend/static/media/loader2.0fff20e2.gif",
+    "static/media/loader3.gif": "/wp-content/themes/frontend/static/media/loader3.2e8e60d1.gif",
+    "static/media/loader4.gif": "/wp-content/themes/frontend/static/media/loader4.b6a5baa3.gif",
+    "static/media/main.png": "/wp-content/themes/frontend/static/media/main.a7ab08af.png",
+    "static/media/new.jpg": "/wp-content/themes/frontend/static/media/new.81ec17b2.jpg"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/css/2.chunk.css",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}

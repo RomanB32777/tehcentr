@@ -1,0 +1,40 @@
+.pagination {
+
+    .page-item {
+    
+        margin-right: 0.5rem;
+
+        .page-link {
+            color: $secondary;
+            box-shadow: $shadow-ui;
+            display: block;
+        }
+
+        &.active {
+            .page-link {
+                background-color: $primary;
+                border-color: $primary;
+                color: $white;
+            }
+        }
+
+        &.disabled {
+            .page-link {
+                color: $dark-grey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pagination {
+    
+        .page-item {
+            font-size: 18px;
+        }
+        
+        .number-item {
+            display: none;
+        }
+    }
+}
