@@ -58,7 +58,9 @@ const AppNavbar = () => {
                                         <img src={require('../img/icons-phone-32.png')} alt="" />
                                     </div>
                                     <div className="navbar-phone-links">
-                                        {contacts.phones && contacts.phones.map((phone, index) => <a key={index} href={`tel:${phone}`}>{phone}</a>)}
+                                        {contacts.phones && contacts.phones.map((phone, index) => (
+												<a key={index} href={`tel:${phone}`}>{phone} {index === 2 && <span style={{ display: 'block' }}>(Новосоветская)</span>}</a>)
+									)}
                                     </div>
                                 </div>
                                 <div className="navbar-email">
@@ -71,7 +73,10 @@ const AppNavbar = () => {
                                     <div className="navbar-location-icon">
                                         <img src={require('../img/icons-marker-32.png')} alt="" />
                                     </div>
-                                    <a href={contacts.location.link} rel="noopener noreferrer" target="_blank">{contacts.location.text}</a>
+									<div className="navbar-location-links">
+										<a href={contacts.location.link} rel="noopener noreferrer" target="_blank">{contacts.location.text}</a>
+										{contacts.location_2 && <a href={contacts.location_2.link} rel="noopener noreferrer" target="_blank">{contacts.location_2.text}</a>}
+									</div>
                                 </div>
                             </>
                          }

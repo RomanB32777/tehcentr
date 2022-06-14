@@ -28,6 +28,8 @@
 
             .navbar-nav {
 
+				align-items: center;
+				
                 .nav-item {
 
                     .nav-link {
@@ -61,7 +63,8 @@
                     }
                 }
 
-                .navbar-phone {
+                .navbar-phone,
+				.navbar-location {
                     display: flex;
 
                     &-icon {
@@ -76,8 +79,7 @@
                     }
                 }
 
-                .navbar-email,
-                .navbar-location {
+                .navbar-email {
                     display: flex;
                     align-items: center;
 
@@ -92,7 +94,7 @@
 
 
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
     .navbar {
 
         .navbar-collapse {

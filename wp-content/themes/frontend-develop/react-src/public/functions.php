@@ -67,6 +67,17 @@
             'info_email' // Should match Option ID
         )  
     ); 
+		
+    add_settings_field( // Option 2
+        'info_vk', // Option ID
+        'ВК', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed (General Settings)
+        'my_settings_section', // Name of our section
+        array( // The $args
+            'info_vk' // Should match Option ID
+        )  
+    ); 
 
     add_settings_field( // Option 3
         'info_phone1', // Option ID
@@ -89,6 +100,17 @@
             'info_phone2' // Should match Option ID
         )  
     ); 
+		
+	add_settings_field( // Option 4
+        'info_phone3', // Option ID
+        'Телефон 3 (Новосоветская)', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed
+        'my_settings_section', // Name of our section (General Settings)
+        array( // The $args
+            'info_phone3' // Should match Option ID
+        )  
+    ); 
 
 	add_settings_field( // Option 5
         'info_addr', // Option ID
@@ -100,8 +122,19 @@
             'info_addr' // Should match Option ID
         )  
     );
+		
+	add_settings_field( // Option 6
+        'info_addr_2', // Option ID
+        'Адрес 2', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed
+        'my_settings_section', // Name of our section (General Settings)
+        array( // The $args
+            'info_addr_2' // Should match Option ID
+        )  
+    );
     
-    add_settings_field( // Option 6
+    add_settings_field( // Option 7
         'info_addr_link', // Option ID
         'Ссылка местоположения на карте', // Label
         'my_textbox_callback', // !important - This is where the args go!
@@ -111,8 +144,19 @@
             'info_addr_link' // Should match Option ID
         )  
     );
+		
+	add_settings_field( // Option 8
+        'info_addr_link_2', // Option ID
+        'Ссылка местоположения на карте', // Label
+        'my_textbox_callback', // !important - This is where the args go!
+        'general', // Page it will be displayed
+        'my_settings_section', // Name of our section (General Settings)
+        array( // The $args
+            'info_addr_link_2' // Should match Option ID
+        )  
+    );
     
-    add_settings_field( // Option 6
+    add_settings_field( // Option 9
         'per_page_custom', // Option ID
         'Кол-во постов на странице', // Label
         'my_numbox_callback', // !important - This is where the args go!
@@ -128,10 +172,14 @@
 	register_setting('general','info_description', 'esc_attr');
 	register_setting('general','info_description_footer', 'esc_attr');
 	register_setting('general','info_email', 'esc_attr');
+	register_setting('general','info_vk', 'esc_attr');	
     register_setting('general','info_phone1', 'esc_attr');
     register_setting('general','info_phone2', 'esc_attr');
+	register_setting('general','info_phone3', 'esc_attr');
     register_setting('general','info_addr', 'esc_attr');
     register_setting('general','info_addr_link', 'esc_attr');
+    register_setting('general','info_addr_2', 'esc_attr');
+    register_setting('general','info_addr_link_2', 'esc_attr');
     register_setting('general','per_page_custom', 'esc_attr');
 }
 
@@ -168,12 +216,18 @@ function my_textarea_callback($args) {  // Textbox Callback
             "contacts" => array (
                 "phones" => array (
                     get_option("info_phone1"), 
-                    get_option("info_phone2")
+                    get_option("info_phone2"),
+					get_option("info_phone3")
                 ),
                 "email" =>  get_option("info_email"),
+				"vk" =>  get_option("info_vk"),
                 "location" => array(
                     "text" => get_option("info_addr"),
                     "link" => get_option("info_addr_link"),
+                ),
+				 "location_2" => array(
+                    "text" => get_option("info_addr_2"),
+                    "link" => get_option("info_addr_link_2"),
                 ),
                 "domain" => $_SERVER['SERVER_NAME']
             ),

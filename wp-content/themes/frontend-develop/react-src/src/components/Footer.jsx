@@ -49,7 +49,7 @@ export const Footer = () => {
                                         <img src={require('../img/icons-phone-32.png')} alt="" />
                                     </div>
                                     <div className="contacts-block-phone-links">
-                                        {contacts.phones && contacts.phones.map((phone, index) => <a key={index} href={`tel:${phone}`}>{phone}</a>)}
+                                        {contacts.phones && contacts.phones.map((phone, index) => <a key={index} href={`tel:${phone}`}>{phone}{index === 2 && <span style={{ display: 'block' }}>(Новосоветская)</span>}</a>)}
                                     </div>
                                 </div>
                                 <div className="contacts-block-email">
@@ -62,7 +62,16 @@ export const Footer = () => {
                                     <div className="contacts-block-location-icon">
                                         <img src={require('../img/icons-marker-32.png')} alt="" />
                                     </div>
-                                    <a href={contacts.location.link} rel="noopener noreferrer" target="_blank">{contacts.location.text}</a>
+									<div className="contacts-block-location-links">
+                                    	<a href={contacts.location.link} rel="noopener noreferrer" target="_blank">{contacts.location.text}</a>
+										{contacts.location_2 && <a href={contacts.location_2.link} rel="noopener noreferrer" target="_blank">{contacts.location_2.text}</a>}
+									</div>
+                                </div>
+								<div className="contacts-block-vk">
+                                    <div className="contacts-block-vk-icon">
+                                        <img src={require('../img/icons-vk.png')} alt="" />
+                                    </div>
+                                    <a href={contacts.vk && contacts.vk} rel="noopener noreferrer" target="_blank">Мы в ВК</a>
                                 </div>
                             </>
                             }

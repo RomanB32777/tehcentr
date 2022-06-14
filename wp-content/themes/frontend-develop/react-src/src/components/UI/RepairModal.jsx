@@ -54,7 +54,7 @@ export const RepairModal = () => {
                             <div className="toasts-block">
                                 {toasts && toasts.map((toast, index) => <AlertToast key={index} name={toast.name} text={toast.text} color={toast.color} />)}
                             </div>
-                            <input type="submit" className={"btn btn-primary " + (loading ? "disabled" : "")} value="Арендовать" />
+                            <input type="submit" className={"btn btn-primary " + (loading ? "disabled" : "")} value="Отправить заявку" />
                         </form>
                     </div>
                 </div>

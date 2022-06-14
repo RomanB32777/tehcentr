@@ -27,7 +27,7 @@ export const loadApp = () => {
         const per_page = siteInfo.data.per_page
     
         
-        const allProducts = await axios(`/wp-json/wp/v2/posts`)
+        const allProducts = await axios("/wp-json/wp/v2/posts?per_page=100")
 
         dispatch({
             type: types.SetProducts,
